@@ -3,26 +3,24 @@
    ========================================================================== */
 
 /**
- * Contain floats
+ * Variables
  *
- * Make an element expand to contain floated children.
- * Uses pseudo-elements (micro clearfix).
+ * It is recommended to override these.
  *
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of the
- *    element.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
+ * 1. Namespace of bits.css's classes.
+ * 2. Margin used my 'u-objLeft' and 'u-objRight'.
  */
 
-.u-cf:before,
-.u-cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
+$bits-ns: 'bits-' !default; /* 1 */
+$bits-layout-obj-margin: 10px !default; /* 2 */
 
-.u-cf:after {
+/**
+ * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ */
+
+.#{$bits-ns}u-cf:after {
+  content: "";
+  display: table;
   clear: both;
 }
 
@@ -36,7 +34,7 @@
  * problematic.
  */
 
-.u-nbfc {
+.#{$bits-ns}u-nbfc {
   overflow: hidden;
 }
 
@@ -52,7 +50,7 @@
  * exceed its width.
  */
 
-.u-nbfcAlt {
+.#{$bits-ns}u-nbfcAlt {
   display: table-cell; /* 1 */
   width: 10000px; /* 2 */
 }
@@ -63,11 +61,11 @@
  * Floats
  */
 
-.u-pullLeft {
+.#{$bits-ns}u-pullLeft {
   float: left !important;
 }
 
-.u-pullRight {
+.#{$bits-ns}u-pullRight {
   float: right !important;
 }
 
@@ -80,14 +78,14 @@
  * proceeding objects.
  */
 
-.u-objLeft {
+.#{$bits-ns}u-objLeft {
   float: left !important;
-  margin-right: 10px;
+  margin-right: $bits-layout-obj-margin;
 }
 
-.u-objRight {
+.#{$bits-ns}u-objRight {
   float: right !important;
-  margin-left: 10px;
+  margin-left: $bits-layout-obj-margin;
 }
 
 /**
@@ -96,8 +94,8 @@
  *    IE 8.
  */
 
-.u-objLeft img,
-.u-objRight img {
+.#{$bits-ns}u-objLeft img,
+.#{$bits-ns}u-objRight img {
   display: block; /* 1 */
   max-width: none; /* 2 */
 }
@@ -109,18 +107,18 @@
  * Depends on an appropriate `display` value.
  */
 
-.u-alignTop {
+.#{$bits-ns}u-alignTop {
   vertical-align: top !important;
 }
 
-.u-alignMiddle {
+.#{$bits-ns}u-alignMiddle {
   vertical-align: middle !important;
 }
 
-.u-alignBaseline {
+.#{$bits-ns}u-alignBaseline {
   vertical-align: baseline !important;
 }
 
-.u-alignBottom {
+.#{$bits-ns}u-alignBottom {
   vertical-align: bottom !important;
 }
