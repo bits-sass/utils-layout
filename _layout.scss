@@ -7,11 +7,11 @@
  *
  * It is recommended to override these.
  *
- * 1. Namespace of bits.css's classes.
+ * 1. Utility namespace.
  * 2. Margin used my 'u-objLeft' and 'u-objRight'.
  */
 
-$bits-ns: 'bits-' !default; /* 1 */
+$bits-utils-ns: 'bits-' !default; /* 1 */
 
 $bits-layout-obj-margin: 10px !default; /* 2 */
 
@@ -19,7 +19,7 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
  * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  */
 
-.#{$bits-ns}u-cf:after {
+.#{$bits-utils-ns}u-cf:after {
   content: "";
   display: table;
   clear: both;
@@ -35,7 +35,7 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
  * problematic.
  */
 
-.#{$bits-ns}u-nbfc {
+.#{$bits-utils-ns}u-nbfc {
   overflow: hidden;
 }
 
@@ -51,7 +51,7 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
  * exceed its width.
  */
 
-.#{$bits-ns}u-nbfcAlt {
+.#{$bits-utils-ns}u-nbfcAlt {
   display: table-cell; /* 1 */
   width: 10000px; /* 2 */
 }
@@ -62,11 +62,11 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
  * Floats
  */
 
-.#{$bits-ns}u-pullLeft {
+.#{$bits-utils-ns}u-pullLeft {
   float: left !important;
 }
 
-.#{$bits-ns}u-pullRight {
+.#{$bits-utils-ns}u-pullRight {
   float: right !important;
 }
 
@@ -79,12 +79,12 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
  * proceeding objects.
  */
 
-.#{$bits-ns}u-objLeft {
+.#{$bits-utils-ns}u-objLeft {
   float: left !important;
   margin-right: $bits-layout-obj-margin;
 }
 
-.#{$bits-ns}u-objRight {
+.#{$bits-utils-ns}u-objRight {
   float: right !important;
   margin-left: $bits-layout-obj-margin;
 }
@@ -95,8 +95,8 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
  *    IE 8.
  */
 
-.#{$bits-ns}u-objLeft img,
-.#{$bits-ns}u-objRight img {
+.#{$bits-utils-ns}u-objLeft img,
+.#{$bits-utils-ns}u-objRight img {
   display: block; /* 1 */
   max-width: none; /* 2 */
 }
@@ -108,18 +108,18 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
  * Depends on an appropriate `display` value.
  */
 
-.#{$bits-ns}u-alignTop {
+.#{$bits-utils-ns}u-alignTop {
   vertical-align: top !important;
 }
 
-.#{$bits-ns}u-alignMiddle {
+.#{$bits-utils-ns}u-alignMiddle {
   vertical-align: middle !important;
 }
 
-.#{$bits-ns}u-alignBaseline {
+.#{$bits-utils-ns}u-alignBaseline {
   vertical-align: baseline !important;
 }
 
-.#{$bits-ns}u-alignBottom {
+.#{$bits-utils-ns}u-alignBottom {
   vertical-align: bottom !important;
 }
