@@ -1,18 +1,18 @@
-# Bits.css utilities: layout
+# Bits.scss utilities: layout
 
-Utility classes for layout-related CSS. See [other utilities](https://github.com/bits-css/utils).
+Utility classes for layout-related CSS. See [other utilities](https://github.com/bits-scss/utils).
 
-Read more about [Bits.css toolkit](https://github.com/bits-css/bits.css).
+Read more about [Bits.scss toolkit](https://github.com/bits-scss/bits.scss).
 
 ## Installation
 
-* __Bower:__ `bower install --save bits-css-utils-layout`
-* __Download:__ [zip](https://github.com/bits-css/utils-layout/zipball/master), [tar.gz](https://github.com/bits-css/utils-layout/tarball/master)
-* __Git:__ `git clone https://github.com/bits-css/utils-layout.git`
+* __Bower:__ `bower install --save bits-scss-utils-layout`
+* __Download:__ [zip](https://github.com/bits-scss/utils-layout/zipball/master), [tar.gz](https://github.com/bits-scss/utils-layout/tarball/master)
+* __Git:__ `git clone https://github.com/bits-scss/utils-layout.git`
 
 ## Available SASS variables
 
-* `bits-ns` - namespace of bits.css's classes
+* `bits-utils-ns` - utilities namespace, defaults to 'bits-'
 * `bits-layout-obj-margin` - margin used my `u-objLeft` and `u-objRight`
 
 ## Available utility classes
