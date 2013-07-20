@@ -1,6 +1,6 @@
 {
-  "name": "bits-scss-utils-layout",
-  "version": "0.3.0",
+  "name": "bits-sass-utils-layout",
+  "version": "0.3.1",
   "author": "Lukáš Mladý",
   "main": "_layout.scss"
 }

@@ -56,11 +56,8 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
   width: 10000px; /* 2 */
 }
 
-/* -------------------------------------------------------------------------- */
-
-/**
- * Floats
- */
+/* Floats
+   ========================================================================== */
 
 .#{$bits-utils-ns}u-pullLeft {
   float: left !important;
@@ -70,11 +67,10 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
   float: right !important;
 }
 
-/* -------------------------------------------------------------------------- */
+/* Object position helpers
+   ========================================================================== */
 
 /**
- * Object position helpers.
- *
  * Float an object left or right, and include some space between the object and
  * proceeding objects.
  */
@@ -101,10 +97,10 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
   max-width: none; /* 2 */
 }
 
-/* -------------------------------------------------------------------------- */
+/* Vertical alignment utilities
+   ========================================================================== */
 
 /**
- * Vertical alignment utilities
  * Depends on an appropriate `display` value.
  */
 
