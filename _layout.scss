@@ -18,8 +18,11 @@ $bits-utils-ns: 'bits-' !default; /* 1 */
 
 $bits-layout-obj-margin: 10px !default; /* 1 */
 
+/* -------------------------------------------------------------------------- */
+
 /**
- * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ * Micro clearfix, as per:
+ * css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
  */
 
 .#{$bits-utils-ns}u-cf:after {
@@ -59,22 +62,34 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
   width: 10000px !important; /* 2 */
 }
 
-/* Floats
-   ========================================================================== */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Float left
+ *
+ * Float the element left.
+ */
 
 .#{$bits-utils-ns}u-pullLeft {
   float: left !important;
 }
 
+/**
+ * Float right
+ *
+ * Float the element right.
+ */
+
 .#{$bits-utils-ns}u-pullRight {
   float: right !important;
 }
 
-/* Object position helpers
-   ========================================================================== */
+/* -------------------------------------------------------------------------- */
 
 /**
- * Float an object left or right, and include some space between the object and
+ * Float object left
+ *
+ * Float an object left and include some space between the object and
  * proceeding objects.
  */
 
@@ -82,6 +97,13 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
   float: left !important;
   margin-right: $bits-layout-obj-margin !important;
 }
+
+/**
+ * Float object right
+ *
+ * Float an object right and include some space between the object and
+ * proceeding objects.
+ */
 
 .#{$bits-utils-ns}u-objRight {
   float: right !important;
@@ -100,10 +122,12 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
   max-width: none !important; /* 2 */
 }
 
-/* Vertical alignment utilities
-   ========================================================================== */
+/* -------------------------------------------------------------------------- */
 
 /**
+ * Vertical alignment
+ *
+ * Align element vertically to top.
  * Depends on an appropriate `display` value.
  */
 
@@ -111,13 +135,34 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
   vertical-align: top !important;
 }
 
+/**
+ * Vertical alignment
+ *
+ * Align element vertically to middle.
+ * Depends on an appropriate `display` value.
+ */
+
 .#{$bits-utils-ns}u-alignMiddle {
   vertical-align: middle !important;
 }
 
+/**
+ * Vertical alignment
+ *
+ * Align element vertically to baseline.
+ * Depends on an appropriate `display` value.
+ */
+
 .#{$bits-utils-ns}u-alignBaseline {
   vertical-align: baseline !important;
 }
+
+/**
+ * Vertical alignment
+ *
+ * Align element vertically to bottom.
+ * Depends on an appropriate `display` value.
+ */
 
 .#{$bits-utils-ns}u-alignBottom {
   vertical-align: bottom !important;
