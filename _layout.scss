@@ -39,7 +39,7 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
  */
 
 .#{$bits-utils-ns}u-nbfc {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 /**
@@ -55,8 +55,8 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
  */
 
 .#{$bits-utils-ns}u-nbfcAlt {
-  display: table-cell; /* 1 */
-  width: 10000px; /* 2 */
+  display: table-cell !important; /* 1 */
+  width: 10000px !important; /* 2 */
 }
 
 /* Floats
@@ -80,12 +80,12 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
 
 .#{$bits-utils-ns}u-objLeft {
   float: left !important;
-  margin-right: $bits-layout-obj-margin;
+  margin-right: $bits-layout-obj-margin !important;
 }
 
 .#{$bits-utils-ns}u-objRight {
   float: right !important;
-  margin-left: $bits-layout-obj-margin;
+  margin-left: $bits-layout-obj-margin !important;
 }
 
 /**
@@ -96,8 +96,8 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
 
 .#{$bits-utils-ns}u-objLeft img,
 .#{$bits-utils-ns}u-objRight img {
-  display: block; /* 1 */
-  max-width: none; /* 2 */
+  display: block !important; /* 1 */
+  max-width: none !important; /* 2 */
 }
 
 /* Vertical alignment utilities
