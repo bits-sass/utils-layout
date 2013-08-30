@@ -8,12 +8,15 @@
  * It is recommended to override these.
  *
  * 1. Utility namespace.
- * 2. Margin used my 'u-objLeft' and 'u-objRight'.
  */
 
 $bits-utils-ns: 'bits-' !default; /* 1 */
 
-$bits-layout-obj-margin: 10px !default; /* 2 */
+/**
+ * 1. Margin used by `u-objLeft` and `u-objRight`.
+ */
+
+$bits-layout-obj-margin: 10px !default; /* 1 */
 
 /**
  * Micro clearfix, as per: css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
@@ -21,8 +24,8 @@ $bits-layout-obj-margin: 10px !default; /* 2 */
 
 .#{$bits-utils-ns}u-cf:after {
   content: "";
-  display: table;
   clear: both;
+  display: table;
 }
 
 /**
