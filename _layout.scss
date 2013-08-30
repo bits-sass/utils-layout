@@ -23,7 +23,7 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
  */
 
 .#{$bits-utils-ns}u-cf:after {
-  content: "";
+  content: " ";
   clear: both;
   display: table;
 }
