@@ -120,6 +120,15 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
 .#{$bits-utils-ns}u-objRight img {
   display: block !important; /* 1 */
   max-width: none !important; /* 2 */
+/**
+ * Horizontal centering
+ *
+ * Horizontally center a block level element with a specified width.
+ */
+
+.#{$bits-utils-ns}u-blockCenter {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* -------------------------------------------------------------------------- */

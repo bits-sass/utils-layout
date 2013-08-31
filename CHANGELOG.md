@@ -2,6 +2,7 @@
 
 * Reorder properties
 * Add `!important` to all rules
+* Add new `u-blockCenter` utility
 
 === 0.3.1 (July 20, 2013)
 
