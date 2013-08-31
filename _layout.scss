@@ -84,8 +84,6 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
   float: right !important;
 }
 
-/* -------------------------------------------------------------------------- */
-
 /**
  * Float object left
  *
@@ -116,10 +114,14 @@ $bits-layout-obj-margin: 10px !default; /* 1 */
  *    IE 8.
  */
 
-.#{$bits-utils-ns}u-objLeft img,
-.#{$bits-utils-ns}u-objRight img {
-  display: block !important; /* 1 */
-  max-width: none !important; /* 2 */
+.#{$bits-utils-ns}u-objLeft,
+.#{$bits-utils-ns}u-objRight {
+  img {
+    display: block !important; /* 1 */
+    max-width: none !important; /* 2 */
+  }
+}
+
 /**
  * Horizontal centering
  *
