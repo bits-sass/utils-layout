@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.4.0 (September 2, 2013)
+
 * Reorder properties
 * Add `!important` to all rules
 * Add new `u-blockCenter` utility
