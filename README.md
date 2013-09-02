@@ -25,6 +25,7 @@ Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 * `u-objLeft` - float left with spacing
 * `u-objRight` - float right with spacing
 * `u-blockCenter` - horizontally center a block level element with a specified width
+* `u-blockRight` - align a block level element with a specified width to right
 * `u-alignTop` - vertically align to top
 * `u-alignMiddle` - vertically align to middle
 * `u-alignBaseline` - vertically align to baseline

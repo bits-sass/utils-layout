@@ -127,11 +127,19 @@ $bits-layout-obj-margin: 10px !default;
    ========================================================================== */
 
 /**
- * Horizontally center a block level element with a specified width.
+ * Horizontally center a block level element with a specified width
  */
 
 .#{$bits-utils-ns}u-blockCenter {
   margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/**
+ * Align a block level element with a specified width to right
+ */
+
+.#{$bits-utils-ns}u-blockRight {
   margin-left: auto !important;
 }
 
