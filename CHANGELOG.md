@@ -3,6 +3,7 @@
 * Reorder properties
 * Add `!important` to all rules
 * Add new `u-blockCenter` utility
+* Use new style for comments
 
 === 0.3.1 (July 20, 2013)
 
