@@ -13,7 +13,7 @@ Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 ## Available SASS variables
 
 * `bits-utils-ns` - utilities namespace, defaults to 'bits-'
-* `bits-layout-obj-margin` - margin used my `u-objLeft` and `u-objRight`
+* `bits-layout-obj-margin` - margin used by `u-objLeft` and `u-objRight`
 
 ## Available utility classes
 
